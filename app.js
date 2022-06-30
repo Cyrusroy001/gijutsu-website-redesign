@@ -11,6 +11,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use("/", routes);
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Server up and running on port 3000");
 });
