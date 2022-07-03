@@ -7,19 +7,14 @@ router.get("/", function (req, res) {
     res.render("home");
 });
 
-// router.get("/products", function (req, res) {
-//     console.log("Request for PRODUCTS page received!");
-//     res.render("products");
-// });
+router.get("/services", function (req, res) {
+    console.log("Request for SERVICES page received!");
+    res.render("services");
+});
 
-// router.get("/services", function (req, res) {
-//     console.log("Request for SERVICES page received!");
-//     res.render("services");
-// });
-
-// router.get("/training", function (req, res) {
-//     console.log("Request for TRAINING page received!");
-//     res.render("training");
-// });
+router.get("/about", function (req, res) {
+    console.log("Request for ABOUT page received!");
+    res.render("about");
+});
 
 module.exports = router;

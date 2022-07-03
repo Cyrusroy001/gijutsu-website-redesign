@@ -22,6 +22,17 @@ h6 {
     font-family: "Poppins", sans-serif;
 }
 
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #5846f9 !important;
+    border: 0px;
+}
+
+.btn-primary:hover {
+    background-color: #5748e6 !important;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -610,26 +621,49 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.card {
-    background-color: #ececec;
-    width: 20rem;
+
+.services .service-row {
+    margin: 10px 0px;
 }
 
-.service-card {
-    display: flex;
-    justify-content: center;
-    border: 0px;
-    background-color: #ececec;
-    margin: 20px;
+.services .service-box {
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+    border: solid 1px grey;
 }
 
-.service-card:hover {
-    border-color: #fff;
+.services .service-image {
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+}
+
+.services .service-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+
+.services .service-box h4 a {
+    color: #2c4964;
+    transition: ease-in-out 0.3s;
+}
+
+.services .service-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.services .service-box:hover {
+    border-color: grey;
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
 }
 
-.service-card .card-body {
-    text-align: center;
+.services .service-button {
+    margin-top: 70px;
 }
 
 /*--------------------------------------------------------------
