@@ -562,7 +562,7 @@ section {
 }
 
 .section-bg {
-    background-color: #f9f8ff;
+    background-color: #ececec;
 }
 
 .section-title {
@@ -605,6 +605,31 @@ section {
 
 .section-title p {
     margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.card {
+    background-color: #ececec;
+    width: 20rem;
+}
+
+.service-card {
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    background-color: #ececec;
+    margin: 20px;
+}
+
+.service-card:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-body {
+    text-align: center;
 }
 
 /*--------------------------------------------------------------
