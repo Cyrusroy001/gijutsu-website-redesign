@@ -1,9 +1,3 @@
-/**
-* Template Name: Techie - v4.7.0
-* Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -262,5 +256,19 @@
       mirror: false
     })
   });
+  
+  // GET STARTED FORM
+  const forms = document.querySelectorAll('.requires-validation')
+  Array.from(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
 
 })()
