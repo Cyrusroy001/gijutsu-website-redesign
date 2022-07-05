@@ -586,6 +586,12 @@ section {
     padding-bottom: 30px;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
 .about-title {
     text-align: left;
 }
@@ -816,11 +822,6 @@ section {
 
 .about .content .read-more:hover {
     background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
-}
-
-.center {
-    margin: auto;
-    width: 50%;
 }
 
 .about .about-image {
