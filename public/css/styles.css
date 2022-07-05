@@ -691,8 +691,8 @@ section {
 }
 
 .services .more-button {
-    flex-direction: column;
-    top: 50%;
+    margin: auto;
+    width: 50%;
 }
 
 .services .read-more:hover {
@@ -816,6 +816,15 @@ section {
 
 .about .content .read-more:hover {
     background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.about .about-image {
+    height: 200px;
 }
 
 /* .about .content .read-more i {
