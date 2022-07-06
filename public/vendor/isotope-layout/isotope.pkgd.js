@@ -1,21 +1,3 @@
-/*!
- * Isotope PACKAGED v3.0.6
- *
- * Licensed GPLv3 for open source use
- * or Isotope Commercial License for commercial use
- *
- * https://isotope.metafizzy.co
- * Copyright 2010-2018 Metafizzy
- */
-
-/**
- * Bridget makes jQuery widgets
- * v2.0.1
- * MIT license
- */
-
-/* jshint browser: true, strict: true, undef: true, unused: true */
-
 ( function( window, factory ) {
   // universal module definition
   /*jshint strict: false */ /* globals define, module, require */
@@ -265,12 +247,6 @@ return EvEmitter;
 
 }));
 
-/*!
- * getSize v2.0.3
- * measure size of elements
- * MIT license
- */
-
 /* jshint browser: true, strict: true, undef: true, unused: true */
 /* globals console: false */
 
@@ -344,10 +320,6 @@ function getZeroSize() {
 
 // -------------------------- getStyle -------------------------- //
 
-/**
- * getStyle, get style of element, check for Firefox bug
- * https://bugzilla.mozilla.org/show_bug.cgi?id=548397
- */
 function getStyle( elem ) {
   var style = getComputedStyle( elem );
   if ( !style ) {
@@ -473,11 +445,6 @@ return getSize;
 
 });
 
-/**
- * matchesSelector v2.0.2
- * matchesSelector( element, '.selector' )
- * MIT license
- */
 
 /*jshint browser: true, strict: true, undef: true, unused: true */
 
@@ -527,10 +494,6 @@ return getSize;
 
 }));
 
-/**
- * Fizzy UI utils v2.0.7
- * MIT license
- */
 
 /*jshint browser: true, undef: true, unused: true, strict: true */
 
@@ -713,8 +676,6 @@ utils.docReady = function( callback ) {
 };
 
 // ----- htmlInit ----- //
-
-// http://jamesroberts.name/blog/2010/02/22/string-functions-for-javascript-trim-to-camel-case-to-dashed-and-to-underscore/
 utils.toDashed = function( str ) {
   return str.replace( /(.)([A-Z])/g, function( match, $1, $2 ) {
     return $1 + '-' + $2;
@@ -1087,8 +1048,7 @@ proto.transition = function( args ) {
 
 };
 
-// dash before all cap letters, including first for
-// WebkitTransform => -webkit-transform
+
 function toDashedAll( str ) {
   return str.replace( /([A-Z])/g, function( $1 ) {
     return '-' + $1.toLowerCase();
@@ -1104,16 +1064,7 @@ proto.enableTransition = function(/* style */) {
     return;
   }
 
-  // make `transition: foo, bar, baz` from style object
-  // HACK un-comment this when enableTransition can work
-  // while a transition is happening
-  // var transitionValues = [];
-  // for ( var prop in style ) {
-  //   // dash-ify camelCased properties like WebkitTransition
-  //   prop = vendorProperties[ prop ] || prop;
-  //   transitionValues.push( toDashedAll( prop ) );
-  // }
-  // munge number to millisecond, to match stagger
+
   var duration = this.layout.options.transitionDuration;
   duration = typeof duration == 'number' ? duration + 'ms' : duration;
   // enable transition styles
@@ -1323,12 +1274,6 @@ proto.destroy = function() {
 return Item;
 
 }));
-
-/*!
- * Outlayer v2.1.1
- * the brains and guts of a layout library
- * MIT license
- */
 
 ( function( window, factory ) {
   'use strict';
@@ -2500,14 +2445,6 @@ return Item;
 
 }));
 
-/*!
- * Masonry v4.2.1
- * Cascading grid layout library
- * https://masonry.desandro.com
- * MIT License
- * by David DeSandro
- */
-
 ( function( window, factory ) {
   // universal module definition
   /* jshint strict: false */ /*globals define, module, require */
@@ -2740,11 +2677,6 @@ return Item;
 
 }));
 
-/*!
- * Masonry layout mode
- * sub-classes Masonry
- * https://masonry.desandro.com
- */
 
 ( function( window, factory ) {
   // universal module definition
@@ -2939,15 +2871,6 @@ return Vertical;
 
 }));
 
-/*!
- * Isotope v3.0.6
- *
- * Licensed GPLv3 for open source use
- * or Isotope Commercial License for commercial use
- *
- * https://isotope.metafizzy.co
- * Copyright 2010-2018 Metafizzy
- */
 
 ( function( window, factory ) {
   // universal module definition
@@ -3279,11 +3202,6 @@ var trim = String.prototype.trim ?
   // encapsulate this, as we just need mungeSorter
   // other functions in here are just for munging
   var mungeSorter = ( function() {
-    // add a magic layer to sorters for convienent shorthands
-    // `.foo-bar` will use the text of .foo-bar querySelector
-    // `[foo-bar]` will use attribute
-    // you can also add parser
-    // `.foo-bar parseInt` will parse that as a number
     function mungeSorter( sorter ) {
       // if not a string, return function or whatever it is
       if ( typeof sorter != 'string' ) {
@@ -3555,7 +3473,6 @@ var trim = String.prototype.trim ?
     });
   };
 
-  // -----  ----- //
 
   return Isotope;
 
